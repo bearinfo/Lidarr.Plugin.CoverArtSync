@@ -1,0 +1,21 @@
+# CoverArtSync build output
+_temp/
+_output/
+_plugins/
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+
+# Build
+bin/
+obj/
+
+# Local dev files
+local/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <DebugType Condition="'$(Configuration)'=='Debug'">embedded</DebugType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Lidarr.Plugin.CoverArtSync</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <Branch></Branch>
+    <Author>bearinfo</Author>
+    <RepoUrl>https://github.com/bearinfo/Lidarr.Plugin.CoverArtSync</RepoUrl>
+    <InformationalVersion Condition="'$(Branch)' != ''">$(AssemblyVersion)-$(Branch)</InformationalVersion>
+    <InformationalVersion Condition="'$(Branch)' == ''">$(AssemblyVersion)</InformationalVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Lidarr.Common">
+      <HintPath>..\local\lidarr-ref\Lidarr.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Lidarr.Core">
+      <HintPath>..\local\lidarr-ref\Lidarr.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="NLog">
+      <HintPath>..\local\lidarr-ref\NLog.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\local\lidarr-ref\FluentValidation.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
